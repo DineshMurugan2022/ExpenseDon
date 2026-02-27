@@ -1,16 +1,43 @@
-# React + Vite
+# Expense Tracker - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance expense tracking application built with React, Vite, and GSAP.
 
-Currently, two official plugins are available:
+## ✨ Features
+- **Dynamic Visuals**: Beautiful charts using Recharts.
+- **Smooth Animations**: Powered by GSAP and Framer Motion.
+- **State Management**: Robust state handling with Redux Toolkit.
+- **Responsive Design**: Mobile-first approach with Tailwind CSS 4.0.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Local Setup
 
-## React Compiler
+### 1. Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. Installation
+```bash
+# Navigate to client directory
+cd client
 
-## Expanding the ESLint configuration
+# Install dependencies
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. Environment Variables
+Create a `.env` file in the `client` directory:
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+### 4. Run the Application
+```bash
+npm run dev
+```
+The app will be available at `http://localhost:5173`.
+
+## 🛠️ Tech Stack
+- **Core**: React 19, Vite
+- **Styling**: Tailwind CSS 4.0
+- **Animations**: GSAP, Lenis (Smooth Scroll), Framer Motion
+- **State**: Redux Toolkit, React Redux
+- **Communication**: Axios
